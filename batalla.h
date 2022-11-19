@@ -1,11 +1,7 @@
 #ifndef BATALLLA_H
 #define BATALLA_H
 
-
-
-void tienda();
-void batalla(int vidasJugador, int dureza, int vidasEnemigo, char*NombreEnemigo);
-void caminos (int vidasJugador, int dureza);
-void caminar();
+void Pelea(int vidasJugador,Carta DeckPrincipal[]);
+void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta cartasdeck[]);
 
 #endif /* BATALLA_H */

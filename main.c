@@ -8,6 +8,7 @@ int main(){
   scanf("%d",&elegi);
   if(elegi != 1){
     printf("Gracias por entrar");
+    exist(-1);
   }else{
     menu_inicial();
   }

@@ -11,20 +11,7 @@ Carta Cartas[15]= {{},{},{} /* ...*/};
 //Carta Cartasdeck[]= {{"N","H",1,2},{"N","H",1,2},{"N","H",1,1},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2}}; //Este se borra
 Carta Cartasminideck[5]={};
 
-void tienda(){
-  int seguir;
-  while(seguir==1){
-    for(int i = 1; i<7;i++){
-      printf("%d-- Nombre: %s - Tipo: %s - Gastos de vidas: %d\n",i,Cartas[i].nombreCarta,Cartas[i].tipo,Cartas[i].gastopoder);
-    }
-  int comprar;
-  scanf("%d",&comprar);
-  printf("Digite el numero de la carta que desee comprar");
-  printf("Digite 1 para seguir comprando");
-  scanf("%d",&seguir);
-  }
-  if(seguir!=1){/* llama a menu*/}
-}
+
 
 /*
 void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta cartasdeck[]){
@@ -114,9 +101,3 @@ void Pelea(int vidasJugador,Carta DeckPrincipal[]){
   }
 }
 
-/*
-int main(void) {
-  Pelea(10,Cartasdeck);
-  return 0;
-}
-*/

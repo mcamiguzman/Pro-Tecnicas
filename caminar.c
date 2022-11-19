@@ -1,8 +1,27 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "caminar.h"
+#include "menu_inicial.h"
+#include "batalla.h"
+
+Carta Cartas[15]= {{},{},{} /* ...*/};
 
 struct nodo *raiz=NULL;
+
+void tienda(){
+  int seguir;
+  while(seguir==1){
+    for(int i = 1; i<7;i++){
+      printf("%d-- Nombre: %s - Tipo: %s - Gastos de vidas: %d\n",i,Cartas[i].nombreCarta,Cartas[i].tipo,Cartas[i].gastopoder);
+    }
+  int comprar;
+  scanf("%d",&comprar);
+  printf("Digite el numero de la carta que desee comprar");
+  printf("Digite 1 para seguir comprando");
+  scanf("%d",&seguir);
+  }
+  if(seguir!=1){/* llama a menu*/}
+}
 
 int existe(char*x,int nivel){
     struct nodo *reco = raiz;
@@ -58,8 +77,8 @@ void imprimirEntreConNivel(struct nodo *reco, int nivel){
     }
 }
 
-void caminar(){
-  int vidas;
+void caminar(Carta DeckPrincipal){
+  int vidas=0;
   int cant;
   int altura=0;
   int seguir;
@@ -76,10 +95,10 @@ void caminar(){
       printf("Que desea hacer? ");
       scanf("%d",&elegir);
       if(elegir==0){
-        //
+        Pelea(vidas,DeckPrincipal);
       }
       if(elegir==1){
-        //
+        tienda();
       }
       if(elegir==2){
         vidas = vidas + 10; //
@@ -92,7 +111,7 @@ void caminar(){
       printf("Que desea hacer? ");
       scanf("%d",&elegir);
       if(elegir==0){
-        //
+        tienda();
       }
       if(elegir==1){
         vidas = vidas + 10; //

@@ -2,7 +2,10 @@
 #include<stdlib.h>
 #include "menu_inicial.h"
 #include "menu_juego.h"
+#include "caminar.h"
+#include "Guardar.h"
 
+Carta DeckPrincipal[]={};
 //
 void bestuario(){
     char c;
@@ -28,7 +31,7 @@ void bestuario(){
     }
     if(fichero==NULL){
         printf("Eror--Intenta Guardar ");
-        menu_juego();}
+        menu_juego(DeckPrincipal);}
     while(fgets(cadena,20,fichero)){
       for(int i;i<cantidad,i++){
         if(p==TodosEnemigos[i].nombre){
@@ -65,7 +68,7 @@ void deck(){
     }
     if(fichero==NULL){
         printf("Eror--Intenta Guardar ");
-        menu_juego();}
+        menu_juego(DeckPrincipal);}
     while(fgets(cadena,20,fichero)){
       for(int i;i<cantidad,i++){
         if(p==TodosCartas[i].nombreCarta){
@@ -79,21 +82,21 @@ void deck(){
 }
 
 
-void menu_juego(){
+void menu_juego(Carta DeckPrincipal){
+  DeckPrincipal=DeckPrincipal;
   int eleccion;
   printf("Menu Juego\n 1. Caminar\n 2. Bestuario\n 3. Deck\n 4. Guardar\n 5. salir");
   while(eleccion > 1 && eleccion<5){
     if(eleccion==1){
-      //llamar a caminar
+      caminar(DeckPrincipal);
     }
     if(eleccion==2){bestuario();}
     if(eleccion==3){deck()}
-    if(eleccion==4){} 
+    if(eleccion==4){Guardar();} 
     if(eleccion==5){menu_inicial();}
     if(eleccion != 1 || eleccion != 2 || eleccion != 3 ){
       printf("Marcacion incorreta");
     }
-    /*Falta Continuar*/
     printf("Digite lo que desea hacer");
     scanf("%d",&eleccion);
   }

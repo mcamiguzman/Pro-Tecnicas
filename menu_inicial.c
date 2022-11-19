@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "menu_inicial.h"
+#include "menu_juego.h"
 
 
 Personaje Personajes [3] ={{"k",8,5,2},{"j",8,5,1},{"p",9,6,3}};
@@ -30,7 +31,7 @@ void menu_inicial(){
         deckPrincipal[i]=Cartas[elegircartas];
       }
       for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nTipo: %s\nEfecto en ataque: %d\n",i,deckPrincipal[i].nombreCarta,deckPrincipal[i].tipo,deckPrincipal[i].efecto);}
-      //llama menu juego
+      menu_juego(deckPrincipal);
     }
     if(eleccion==3){exit(-1);}
     if(eleccion != 1 || eleccion != 2 || eleccion != 3 ){
