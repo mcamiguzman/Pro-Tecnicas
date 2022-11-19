@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include "menu_inicial.h"
 
+
 Personaje Personajes [3] ={{"k",8,5,2},{"j",8,5,1},{"p",9,6,3}};
 Carta deckPrincipal[5]={};
 Carta Cartas[15]= {{},{},{} /* ...*/};

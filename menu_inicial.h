@@ -15,5 +15,11 @@ typedef struct Carta{
   int efecto;
 }Carta;
 
+typedef struct Enemigo {
+  char*nombre;
+  int vidasEnemigo;
+  char*descripcion;
+}Enemigo;
+
 void menu_inicial();
 #endif
