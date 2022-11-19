@@ -8,4 +8,12 @@ typedef struct Personaje {
   int fuerza;
 }Personaje;
 
+typedef struct Carta{
+  char*nombreCarta;
+  char*tipo;
+  int gastopoder;
+  int efecto;
+}Carta;
+
+void menu_inicial();
 #endif

@@ -3,7 +3,8 @@
 #include "menu_inicial.h"
 
 Personaje Personajes [3] ={{"k",8,5,2},{"j",8,5,1},{"p",9,6,3}};
-
+Carta deckPrincipal[5]={};
+Carta Cartas[15]= {{},{},{} /* ...*/};
 
 void menu_inicial(){
   int eleccion;
@@ -24,8 +25,15 @@ void menu_inicial(){
     fichero = fopen("PersonajeJugador.txt", "wt");
     fputs(Personajes[eleccionPersonaje].nombrePersonaje,fichero);
     fclose(fichero);  
+
+    printf("Tus cartas son: \n");
+    for(int i;i<5;i++){
+      int elegircartas = rand() % 15;
+      deckPrincipal[i]=Cartas[elegircartas];
+    }
+    //for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nFuerza: %d\n Dureza: %d\n Inteligencia: %d\n\n",i,deckPrincipal[i].nombreCarta,Personajes[i].fuerza,Personajes[i].dureza,Personajes[i].inteligencia);}
     //llama menu juego
-   case 2:
+    case 2:
     
     //
   }

@@ -25,19 +25,19 @@ void tienda(){
   }
   if(seguir!=1){/* llama a menu*/}
 }
- 
+
+/*
 void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta cartasdeck[]){
   int manas;
   int elegir;
   
   srand(time(NULL)); 
-  int AtaqueEnemigo = rand() % 10 /* Promedio de todas las vidas*/;
-  
+  int AtaqueEnemigo = rand() % 10 // Promedio de todas las vidas;
   while(vidasEnemigo>=0||vidasJugador>=0){
     manas = 5;
     for(int i;i<5;i++){
       srand(time(NULL)); 
-      int Pos = rand() % 10 /* Promedio de todas las vidas*/;
+      int Pos = rand() % 10 // Promedio de todas las vidas;
       Cartasminideck[i]= cartasdeck[Pos];
     }
     printf("Nombre Enemigo: %s\n",NombreEnemigo);
@@ -89,6 +89,7 @@ void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta carta
     printf("Termino");
     }
 }  
+*/
 
 void Pelea(int vidasJugador,Carta DeckPrincipal[]){
   printf("1--------Batalla con Normal\n");
