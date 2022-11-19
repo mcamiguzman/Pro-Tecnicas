@@ -34,6 +34,11 @@ void menu_inicial(){
     //for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nFuerza: %d\n Dureza: %d\n Inteligencia: %d\n\n",i,deckPrincipal[i].nombreCarta,Personajes[i].fuerza,Personajes[i].dureza,Personajes[i].inteligencia);}
     //llama menu juego
     case 2:
+      ;
+    case 3:
+      exit(-1);
+    default:
+      printf("Marcacion incorrecta);
     
     //
   }
