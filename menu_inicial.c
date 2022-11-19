@@ -25,13 +25,12 @@ void menu_inicial(){
       fichero = fopen("PersonajeJugador.txt", "wt");
       fputs(Personajes[eleccionPersonaje].nombrePersonaje,fichero);
       fclose(fichero);  
-
       printf("Tus cartas son: \n");
       for(int i;i<5;i++){
         int elegircartas = rand() % 15;
         deckPrincipal[i]=Cartas[elegircartas];
       }
-      for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nFuerza: %d\n Dureza: %d\n Inteligencia: %d\n\n",i,deckPrincipal[i].nombreCarta,[i].fuerza,Personajes[i].dureza,Personajes[i].inteligencia);}
+      for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nTipo: %s\nEfecto en ataque: %d\n",i,deckPrincipal[i].nombreCarta,deckPrincipal[i].tipo,deckPrincipal[i].efecto);}
       //llama menu juego
       case 2:
         ;
