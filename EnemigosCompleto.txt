@@ -1,0 +1,30 @@
+Leviatan,150,De la profundidad del mar, al caos en la Tierra
+Ogro,100,Verdes y agresivos con ganas de comer
+Canserbero,125,Tres cabezas llenas de odio y fuego
+Satanas,200,Maldad en vida pura
+Centauro,80,Mitad hombre mitad caballo con habilidades para la guerra
+Guardian,75,Caballero fuerte y dispuesto a todo
+Saqueador,50,Humanos agresivos con instintos de robo
+Salvaje,30,Ente con ansias de sangre
+Demogorgon,100,Criatura de otra dimension con muchos dientes afilados
+Dementor,60,Tu alma o tu vida te va a succionar
+Chupacabra,90,Garras afiladas y nocturnas que no se conforma con vacas
+Wendigo,100,El hambre que conlleva a la locura
+Hades,200,Simplemente el Dios de la Guerra
+Zombie,30,Cereeeeeeebros
+Valquiria,130,Mujeres defensoras de la moral que tengan con alas
+Godzilla,190,Jefe de todas las bestias
+Pirata,60,Le das oro o le das la vida
+Esqueleto,20,Endeble pero en grupo peligrosos
+Gargola,50,Seres de piedra llenos de maldad
+Ninfa,60,Defensora de la naturaleza sin excepciones
+Medusa,140,Su mirada petrificara lo mas profundo de tu ser
+Vecna,180,Jefe de dimensiones oscuras y sangrientas
+Demonio,90,Ser malvado amante de la ira y la muerte
+Nefilis,120,Guardianes angelicales que transmiten enfermedad y depresión
+Canival,40,Su unico alimento es tu cuerpo
+Alien,90,Avanzado y misterioso con ganas de secuestrar
+Bufon,130,Matara de la risa al que se acerque a el
+Dracula,150,Beber sangre de sus enemigos es su pasion
+Thor,190,Principe de los truenos y las guerras nordicas
+Traidor,20,Humanos debiles pero traidores ante sus aliados

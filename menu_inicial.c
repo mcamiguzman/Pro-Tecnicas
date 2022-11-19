@@ -10,10 +10,8 @@ void menu_inicial(){
   int eleccion;
   int eleccionPersonaje;
   printf("Menu Inicial\n 1. Juego Nuevo\n 2. Continuar\n 3. Salir");
-  c
   while(eleccion == 1 || eleccion == 2 || eleccion==3){
-    switch(eleccion){
-      case 1:
+    if(eleccion==1){
       printf("Elejiste Nuevo Juego");
       printf("Personajes\n");
       for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nFuerza: %d\n Dureza: %d\n Inteligencia: %d\n\n",i,Personajes[i].nombrePersonaje,Personajes[i].fuerza,Personajes[i].dureza,Personajes[i].inteligencia);}
@@ -32,14 +30,13 @@ void menu_inicial(){
       }
       for(int i=0;i<2;i++){printf("Carta %d\n Nombre: %s\nTipo: %s\nEfecto en ataque: %d\n",i,deckPrincipal[i].nombreCarta,deckPrincipal[i].tipo,deckPrincipal[i].efecto);}
       //llama menu juego
-      case 2:
-        ;
-      case 3:
-        exit(-1);
-      default:
-        printf("Marcacion incorrecta);
     }
+    if(eleccion==3){exit(-1);}
+    if(eleccion != 1 || eleccion != 2 || eleccion != 3 ){
+      printf("Marcacion incorreta");
+    }
+    /*Falta Continuar*/
+    printf("Digite lo que desea hacer");
+    scanf("%d",&eleccion);
   }
-  printf("Digite lo que desea hacer");
-  scanf("%d",&eleccion);
-}  
+}
