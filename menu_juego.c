@@ -6,7 +6,7 @@
 #include "Guardar.h"
 
 Carta DeckPrincipal[]={};
-//
+
 void bestuario(){
     char c;
     int cont,cantidad;
@@ -36,13 +36,10 @@ void bestuario(){
       for(int i;i<cantidad,i++){
         if(p==TodosEnemigos[i].nombre){
             EnemigosBestuario[i].nombre=TodosEnemigos[i].nombre;
+            EnemigosBestuario[i].vidasEnemigo=TodosEnemigos[i].vidasEnemigo;
         }
       }
-    }
-    //Falta organizarlos 
-    for(int x; x<cantidad;x++){
-        //printf("Nombre: %s\n",);
-    }
+      
 }
 
 void deck(){
@@ -91,7 +88,7 @@ void menu_juego(Carta DeckPrincipal){
       caminar(DeckPrincipal);
     }
     if(eleccion==2){bestuario();}
-    if(eleccion==3){deck()}
+    if(eleccion==3){deck();}
     if(eleccion==4){Guardar();} 
     if(eleccion==5){menu_inicial();}
     if(eleccion != 1 || eleccion != 2 || eleccion != 3 ){

@@ -12,7 +12,7 @@ struct nodo {
 int existe(char*x,int nivel);
 void insertar(char*x,int nivel);
 void imprimirEntreConNivel(struct nodo *reco, int nivel);
-void caminar(int vidas, Carta DeckPrincipal);
+void caminar( Carta DeckPrincipal);
 void tienda();
 
 #endif 

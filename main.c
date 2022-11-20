@@ -11,4 +11,5 @@ int main(){
   }else{
     menu_inicial();
   }
+  return 0;
 }
