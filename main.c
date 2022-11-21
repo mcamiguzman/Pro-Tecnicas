@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "menu_inicial.h"
 
-int main(){
+void main(){
   int elegi;
   printf("Bienvenido al juego\n");
   printf(" Digite 1 para seguir");
