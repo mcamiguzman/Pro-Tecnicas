@@ -2,5 +2,8 @@
 #define DECK_H
 
 void CargarNuevo();
-Carta RetornaDeck();
+Carta RetornarminiDeck();
+void imprimirDeckGuardado();
+void ContinuarDeck();
+
 #endif

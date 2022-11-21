@@ -20,5 +20,5 @@ void Guardar(){
     fichero = fopen("CartasJugador.txt", "wt");
     fputs(dato2, fichero);
     fclose(fichero2);
-
+    printf("Se guardo exitosamente");
 }

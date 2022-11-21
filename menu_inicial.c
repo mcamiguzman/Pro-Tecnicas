@@ -6,8 +6,6 @@
 
 
 Personaje Personajes [3] ={{"k",8,5,2},{"j",8,5,1},{"p",9,6,3}};
-Carta deckPrincipal[5]={};
-Carta Cartas[15]= {{},{},{} /* ...*/};
 
 //Cambio: cada vez que entre va a elegir un personaje
 void menu_inicial(){
@@ -26,14 +24,17 @@ void menu_inicial(){
       printf("Elejiste Nuevo Juego");
       
       //Se carga el nuevo deck que esta en Deck
+      printf("Tus cartas son:");
       CargarNuevo();
 
       //Prosigue con el menu de juego
-      menu_juego(RetornaDeck());
+      menu_juego();
       //No hace nada mas
     }
       
     if(eleccion==2){
+      ContinuarDeck();
+      
       //Retorna deck y bestuario
     }
 
