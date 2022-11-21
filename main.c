@@ -3,7 +3,7 @@
 
 int main(){
   int elegi;
-  printf("Bienvenido al juego");
+  printf("Bienvenido al juego\n");
   printf(" Digite 1 para seguir");
   scanf("%d",&elegi);
   if(elegi != 1){

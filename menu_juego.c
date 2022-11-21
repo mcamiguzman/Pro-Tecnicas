@@ -8,7 +8,6 @@
 Carta DeckPrincipal[]={};
 
 void bestuario(){
-    char c;
     int cont,cantidad;
     char cadena[20];
     char*p ;
@@ -19,7 +18,7 @@ void bestuario(){
     FILE* fichero;
     fichero = fopen("EnemigosJugador", "r");
     while(1){
-        c = fgetc(fichero);
+        cadena = fgetc(fichero);
 
         if(c == '\n'){
             cont++;
@@ -40,6 +39,7 @@ void bestuario(){
         }
       }
       
+}
 }
 
 void deck(){
