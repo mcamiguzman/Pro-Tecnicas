@@ -4,29 +4,25 @@
 #include "batalla.h"
 #include "menu_inicial.h"
 #include "caminar.h"
+
 Enemigo EnemigosNormales[10] = {{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13}};
 Enemigo EnemigosEspeciales[10] = {{"Flecha",13},{},{},{},{},{},{},{},{},{}};
 Enemigo EnemigosJefes[10] = {{"Flecha",13},{},{},{},{},{},{},{},{},{}};
 Carta Cartas[15]= {{},{},{} /* ...*/};
-//Carta Cartasdeck[]= {{"N","H",1,2},{"N","H",1,2},{"N","H",1,1},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2},{"NN","HH",1,2}}; //Este se borra
 Carta Cartasminideck[5]={};
 
 
 
-/*
 void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta cartasdeck[]){
   int manas;
   int elegir;
   
   srand(time(NULL)); 
   int AtaqueEnemigo = rand() % 10 // Promedio de todas las vidas;
+
   while(vidasEnemigo>=0||vidasJugador>=0){
     manas = 5;
-    for(int i;i<5;i++){
-      srand(time(NULL)); 
-      int Pos = rand() % 10 // Promedio de todas las vidas;
-      Cartasminideck[i]= cartasdeck[Pos];
-    }
+    
     printf("Nombre Enemigo: %s\n",NombreEnemigo);
     printf("Tus vidas: %d\n",vidasJugador);
     printf("Vidas enemigo: %d\n" ,vidasEnemigo);
@@ -71,17 +67,20 @@ void batalla(int vidasJugador, int vidasEnemigo, char*NombreEnemigo, Carta carta
     //Guardar
     //llama a menu principal
     
-    
   }else{
     printf("Termino");
     }
 }  
-*/
 
-void Pelea(int vidasJugador,Carta DeckPrincipal[]){
-  printf("1--------Batalla con Normal\n");
-  printf("2--------Batalla con Jefe\n");
-  printf("3--------Batalla con Enemigos Especial \n");
+
+void Pelea(int vidasJugador, Carta Deck[]){
+      insertar("Batalla Normal",1);
+      insertar("Batalla con Jefe",1);
+      insertar("Batalla con enemigo especial",1);
+      printf("Mapa\n");
+      imprimirEntreConNivel(raiz,0);
+
+  Cartasminideck = Deck;
     
   srand(time(NULL)); 
   int RandEnemigo = rand() % 9;
@@ -90,14 +89,15 @@ void Pelea(int vidasJugador,Carta DeckPrincipal[]){
   printf("Que desea ");
   scanf("%d",&ECamino);
     
-  if(ECamino==1){
+  if(ECamino==0){
     batalla(vidasJugador,EnemigosNormales[RandEnemigo].vidasEnemigo, EnemigosNormales[RandEnemigo].nombre,DeckPrincipal);
   }
-  if(ECamino==2){
+  if(ECamino==1){
     batalla(vidasJugador,EnemigosJefes[RandEnemigo].vidasEnemigo,EnemigosJefes[RandEnemigo].nombre,DeckPrincipal);
   }
-  if(ECamino==3){
+  if(ECamino==2){
     batalla(vidasJugador,EnemigosEspeciales[RandEnemigo].vidasEnemigo,EnemigosEspeciales[RandEnemigo].nombre,DeckPrincipal);
   }
+  
 }
 

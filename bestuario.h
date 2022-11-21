@@ -1,7 +1,7 @@
 #ifndef BESTUARIO_H
 #define BESTUARIO_H
 
-void ContinuarDeck();
+void ContinuarBestuario();
 void imprimirBestuarioGuardado();
 
 #endif

@@ -22,8 +22,9 @@ void menu_juego(){
     }
     if(eleccion==4){Guardar();} 
     if(eleccion==5){menu_inicial();}
+
+    printf("Marcacion incorrecta");
+    printf("Digite lo que desea hacer");
+    scanf("%d",&eleccion);
   }
-  printf("Marcacion incorrecta");
-  printf("Digite lo que desea hacer");
-  scanf("%d",&eleccion);
 }

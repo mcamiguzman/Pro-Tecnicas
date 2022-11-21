@@ -10,6 +10,8 @@ Carta deckGuardadas[]={};
 Carta miniDeck[]={};
 int longarr=sizeof(deckGuardadas);
 
+
+
 void tienda(){
   int seguir;
   while(seguir==1){

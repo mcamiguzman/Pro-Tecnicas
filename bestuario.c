@@ -8,7 +8,7 @@ Enemigo TodosEnemigos[]={};
 Enemigo EnemigosBestuario[]={};
 int longr = sizeof(EnemigosBestuario);
 
-void ContinuarDeck(){
+void ContinuarBestuario(){
     char*p;
     char cadena[20];
     int cont,cantidad;
