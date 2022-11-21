@@ -12,7 +12,7 @@ void menu_juego(){
   printf("Menu Juego\n 1. Caminar\n 2. Bestuario\n 3. Deck\n 4. Guardar\n 5. salir");
   while(eleccion > 1 && eleccion<5){
     if(eleccion==1){
-      caminar(RetornarminiDeck());
+      caminar();
     }
     if(eleccion==2){
       imprimirBestuarioGuardado()}

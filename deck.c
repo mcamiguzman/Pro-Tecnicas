@@ -10,7 +10,22 @@ Carta deckGuardadas[]={};
 Carta miniDeck[]={};
 int longarr=sizeof(deckGuardadas);
 
-void
+void tienda(){
+  int seguir;
+  while(seguir==1){
+    for(int i = 1; i<7;i++){
+      printf("%d-- Nombre: %s - Tipo: %s - Gastos de vidas: %d\n",i,Cartas[i].nombreCarta,Cartas[i].tipo,Cartas[i].gastopoder);
+    }
+  int comprar;
+  printf("Digite el numero de la carta que desee comprar");
+  scanf("%d",&comprar);
+  deckGuardadas[Cartas[comprar]];
+  }
+  printf("Digite 1 para seguir comprando");
+  scanf("%d",&seguir);
+  if(seguir!=1){menu_juego();}
+}
+
 
 void CargarNuevo(){
     printf("Tus cartas son: \n");

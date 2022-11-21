@@ -3,7 +3,7 @@
 #include <time.h>
 #include "batalla.h"
 #include "menu_inicial.h"
-
+#include "caminar.h"
 Enemigo EnemigosNormales[10] = {{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13},{"Flecha",13}};
 Enemigo EnemigosEspeciales[10] = {{"Flecha",13},{},{},{},{},{},{},{},{},{}};
 Enemigo EnemigosJefes[10] = {{"Flecha",13},{},{},{},{},{},{},{},{},{}};

@@ -3,6 +3,8 @@
 #include "caminar.h"
 #include "menu_inicial.h"
 #include "batalla.h"
+#include "deck.h"
+#include "menu_juego.h"
 
 Carta Cartas[15]= {{},{},{} /* ...*/};
 
@@ -77,8 +79,8 @@ void imprimirEntreConNivel(struct nodo *reco, int nivel){
     }
 }
 
-void caminar(Carta DeckPrincipal){
-  int vidas=0;
+void caminar(){
+  int vidas=50;
   int cant;
   int altura=0;
   int seguir;
@@ -95,13 +97,13 @@ void caminar(Carta DeckPrincipal){
       printf("Que desea hacer? ");
       scanf("%d",&elegir);
       if(elegir==0){
-        Pelea(vidas,DeckPrincipal);
+        Pelea(vidas,RetornarminiDeck());
       }
       if(elegir==1){
         tienda();
       }
       if(elegir==2){
-        vidas = vidas + 10; //
+        vidas = vidas + 50; //
       }else{printf("Marcacion incorreta");}
     }else{
       insertar("Tienda",1);
@@ -114,10 +116,10 @@ void caminar(Carta DeckPrincipal){
         tienda();
       }
       if(elegir==1){
-        vidas = vidas + 10; //
+        vidas = vidas + 25; 
       }
     }
   }
   printf("Como lo que marcaste es diferente a 1 te llevaremos a menu de juego");
-  
+  menu_juego();
 }
